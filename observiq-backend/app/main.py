@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.openapi.utils import get_openapi
 from app.routers import health, teams, traces, analytics, anomalies
+import os
 
 app = FastAPI(
     title="ObservIQ API",
@@ -9,9 +10,12 @@ app = FastAPI(
     version="0.4.0"
 )
 
+# Get CORS origins from environment variable
+cors_origins = os.getenv("CORS_ORIGINS", "*").split(",")
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=cors_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
