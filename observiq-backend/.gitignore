@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.env
+venv/
+.venv/
+.env.local
+
+# Dashboard
+observiq-dashboard/node_modules/
+observiq-dashboard/.next/
+observiq-dashboard/.env.local
+
+# SDK
+observiq-sdk/observiq_sdk.egg-info/
+observiq-sdk/__pycache__/

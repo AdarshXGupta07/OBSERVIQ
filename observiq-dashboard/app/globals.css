@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    border-color: #2A2A2A;
+  }
+  
+  body {
+    background-color: #050505;
+    color: #F8FAFC;
+  }
+}
+
+@layer utilities {
+  .animate-in {
+    animation: fadeIn 0.3s ease-in;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .new-trace-flash {
+    animation: flashBorder 2s ease-out;
+  }
+
+  @keyframes flashBorder {
+    0%, 100% {
+      border-left-color: transparent;
+    }
+    50% {
+      border-left-color: #FFFFFF;
+    }
+  }
+}
