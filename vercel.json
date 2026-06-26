@@ -1,0 +1,12 @@
+{
+  "buildCommand": "cd observiq-dashboard && npm run build",
+  "outputDirectory": "observiq-dashboard/.next",
+  "installCommand": "cd observiq-dashboard && npm install",
+  "framework": "nextjs",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/observiq-dashboard/$1"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "observiq-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "cd observiq-dashboard && npm run build",
+    "start": "cd observiq-dashboard && npm start",
+    "dev": "cd observiq-dashboard && npm run dev",
+    "install-frontend": "cd observiq-dashboard && npm install"
+  },
+  "workspaces": [
+    "observiq-dashboard"
+  ]
+}
