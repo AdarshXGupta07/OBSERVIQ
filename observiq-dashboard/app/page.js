@@ -40,14 +40,6 @@ export default function Home() {
             </div>
           </Link>
           <nav className="flex items-center gap-3">
-            <a
-              href="https://observiq-docs.netlify.app"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="rounded-lg border border-border px-4 py-2 text-sm font-medium text-soft transition-colors hover:border-ivory hover:text-ivory"
-            >
-              Read Docs
-            </a>
             <Link
               href="/login"
               className="rounded-lg border border-border px-4 py-2 text-sm font-medium text-soft transition-colors hover:border-ivory hover:text-ivory"
@@ -90,6 +82,14 @@ export default function Home() {
               >
                 Login with API key
               </Link>
+              <a
+                href="https://observiq-docs.netlify.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-lg border border-border px-5 py-3 text-sm font-semibold text-muted transition-colors hover:border-ivory hover:text-ivory"
+              >
+                Read Docs
+              </a>
             </div>
           </div>
 
