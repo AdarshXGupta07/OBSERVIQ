@@ -1,7 +1,7 @@
 [build]
   base = "observiq-dashboard"
   command = "npm run build"
-  publish = "observiq-dashboard/.next"
+  publish = ".next"
 
 [build.environment]
   NODE_VERSION = "20"
