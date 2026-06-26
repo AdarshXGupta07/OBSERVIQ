@@ -1,6 +1,6 @@
-fastapi==0.115.0
-uvicorn[standard]==0.30.0
-supabase==2.7.4
-pydantic[email]==2.8.0
-pydantic-settings==2.4.0
-python-dotenv==1.0.1
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+supabase==2.0.3
+pydantic[email]==2.5.0
+pydantic-settings==2.1.0
+python-dotenv==1.0.0
