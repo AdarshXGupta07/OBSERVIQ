@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "postinstall": "cd observiq-dashboard && npm install",
-    "build": "cd observiq-dashboard && npm run build",
+    "build": "cd observiq-dashboard && npm install && npm run build",
     "start": "cd observiq-dashboard && npm start",
     "dev": "cd observiq-dashboard && npm run dev"
   }
