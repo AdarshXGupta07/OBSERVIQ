@@ -2,7 +2,7 @@
 
 import { usePathname, useRouter } from 'next/navigation'
 import Link from 'next/link'
-import { LayoutDashboard, Activity, TrendingUp, AlertTriangle, LogOut } from 'lucide-react'
+import { LayoutDashboard, Activity, TrendingUp, AlertTriangle, LogOut, BookOpen } from 'lucide-react'
 import { useState, useEffect } from 'react'
 import type { Team } from '@/lib/types'
 
@@ -93,6 +93,15 @@ export default function Sidebar() {
           <LogOut className="w-4 h-4" />
           Logout
         </button>
+        <a
+          href="https://observiq-docs.netlify.app"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center gap-2 text-sm text-muted hover:text-soft transition-colors w-full"
+        >
+          <BookOpen className="w-4 h-4" />
+          Read Docs
+        </a>
       </div>
     </aside>
   )

@@ -40,6 +40,14 @@ export default function Home() {
             </div>
           </Link>
           <nav className="flex items-center gap-3">
+            <a
+              href="https://observiq-docs.netlify.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-lg border border-border px-4 py-2 text-sm font-medium text-soft transition-colors hover:border-ivory hover:text-ivory"
+            >
+              Read Docs
+            </a>
             <Link
               href="/login"
               className="rounded-lg border border-border px-4 py-2 text-sm font-medium text-soft transition-colors hover:border-ivory hover:text-ivory"
@@ -180,6 +188,7 @@ with client.trace(model="gpt-4o-mini", feature_name="support-summary"):
         <div className="mx-auto flex max-w-7xl flex-col gap-4 text-sm text-muted md:flex-row md:items-center md:justify-between">
           <span>ObservIQ gives AI teams a clean operational view of their model traffic.</span>
           <div className="flex items-center gap-4">
+            <a href="https://observiq-docs.netlify.app" target="_blank" rel="noopener noreferrer" className="hover:text-ivory">Docs</a>
             <Link href="/login" className="hover:text-ivory">Login</Link>
             <Link href="/signup" className="hover:text-ivory">Sign up</Link>
           </div>
